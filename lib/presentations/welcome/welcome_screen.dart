@@ -47,24 +47,21 @@ class WelcomScreen extends StatelessWidget {
           ),
           Row(
             children: [
-              Expanded(
+              const Expanded(
                 child: WelcomeButton(
                   text: "Sign In",
                   navigateTo: SignInScreen(),
                   buttonColor: Colors.transparent,
                   textColor: kPrimaryColor,
-                  borderRadius: BorderRadius.only(
-                    topRight: Radius.circular(50),
-                  ),
                 ),
               ),
               Expanded(
                 child: WelcomeButton(
                   text: "Sign Up",
-                  navigateTo: SignUpScreen(),
+                  navigateTo: const SignUpScreen(),
                   buttonColor: kPrimaryColor.withOpacity(0.8),
                   textColor: kSecondaryColor,
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(50),
                   ),
                 ),

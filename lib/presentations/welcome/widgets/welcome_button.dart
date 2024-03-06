@@ -1,5 +1,6 @@
 import 'package:ezy_sneakers/core/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class WelcomeButton extends StatelessWidget {
   const WelcomeButton({
@@ -8,23 +9,21 @@ class WelcomeButton extends StatelessWidget {
     required this.navigateTo,
     required this.buttonColor,
     required this.textColor,
-    required this.borderRadius,
+    this.borderRadius,
   });
   final Widget navigateTo;
   final String text;
   final Color buttonColor;
   final Color textColor;
-  final BorderRadius borderRadius;
+  final BorderRadius? borderRadius;
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => navigateTo,
-          ),
+        Get.to(
+          () => navigateTo,
+          transition: Transition.fadeIn,
         );
       },
       child: Container(
