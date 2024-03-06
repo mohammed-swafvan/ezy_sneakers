@@ -1,4 +1,5 @@
 import 'package:ezy_sneakers/core/colors.dart';
+import 'package:ezy_sneakers/core/constants.dart';
 import 'package:flutter/material.dart';
 
 class AppStyle {
@@ -20,8 +21,19 @@ class AppStyle {
 
   static ThemeData appTheme = ThemeData(
     appBarTheme: const AppBarTheme(backgroundColor: kPrimaryColor, elevation: 4),
+    brightness: Brightness.light,
+    shadowColor: kLightGrey,
     textButtonTheme: TextButtonThemeData(
-      style: ButtonStyle(),
+      style: ButtonStyle(
+        foregroundColor: MaterialStateProperty.all<Color>(kPrimaryColor),
+        backgroundColor: MaterialStateProperty.all<Color>(kSecondaryColor),
+        elevation: MaterialStateProperty.all<double>(4.0),
+        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+          RoundedRectangleBorder(
+            borderRadius: kBorderRadius12,
+          ),
+        ),
+      ),
     ),
     colorScheme: ColorScheme.fromSeed(seedColor: kSecondaryColor),
     primarySwatch: materialConvervtedColor,
