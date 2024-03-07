@@ -1,4 +1,3 @@
-import 'package:ezy_sneakers/core/colors.dart';
 import 'package:ezy_sneakers/core/image_string.dart';
 import 'package:flutter/material.dart';
 

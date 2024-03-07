@@ -35,6 +35,19 @@ class AppStyle {
         ),
       ),
     ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ButtonStyle(
+        padding: MaterialStateProperty.all<EdgeInsets>(kEdgeInsetsVert10),
+        foregroundColor: MaterialStateProperty.all<Color>(kPrimaryColor),
+        backgroundColor: MaterialStateProperty.all<Color>(kSecondaryColor),
+        elevation: MaterialStateProperty.all<double>(4.0),
+        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+          RoundedRectangleBorder(
+            borderRadius: kBorderRadius10,
+          ),
+        ),
+      ),
+    ),
     colorScheme: ColorScheme.fromSeed(seedColor: kSecondaryColor),
     primarySwatch: materialConvervtedColor,
     scaffoldBackgroundColor: kScaffoldBgColor,

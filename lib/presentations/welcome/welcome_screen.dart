@@ -4,9 +4,7 @@ import 'package:ezy_sneakers/presentations/sign_in/sign_in_screen.dart';
 import 'package:ezy_sneakers/presentations/sign_up/sign_up_screen.dart';
 import 'package:ezy_sneakers/presentations/welcome/widgets/welcome_button.dart';
 import 'package:ezy_sneakers/presentations/widgets/custom_scaffold.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class WelcomScreen extends StatelessWidget {
   const WelcomScreen({super.key});
