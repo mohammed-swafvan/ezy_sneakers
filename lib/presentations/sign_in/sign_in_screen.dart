@@ -1,10 +1,10 @@
 import 'package:ezy_sneakers/core/colors.dart';
 import 'package:ezy_sneakers/core/constants.dart';
+import 'package:ezy_sneakers/presentations/sign_up/sign_up_screen.dart';
+import 'package:ezy_sneakers/presentations/widgets/auth_header_tile_widget.dart';
 import 'package:ezy_sneakers/presentations/widgets/auth_text_field_widget.dart';
 import 'package:ezy_sneakers/presentations/widgets/custom_scaffold.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/widgets.dart';
-import 'package:iconsax/iconsax.dart';
+import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 
 class SignInScreen extends StatelessWidget {
@@ -16,31 +16,10 @@ class SignInScreen extends StatelessWidget {
     return CustomScaffold(
       child: Column(
         children: [
-          ListTile(
-            leading: InkWell(
-              onTap: () {
-                Navigator.of(context).pop();
-              },
-              child: Container(
-                padding: const EdgeInsets.all(6),
-                decoration: BoxDecoration(
-                  color: kPrimaryColor.withOpacity(0.15),
-                  shape: BoxShape.circle,
-                ),
-                child: const Icon(
-                  Iconsax.arrow_left_2,
-                  color: kPrimaryColor,
-                  size: 20,
-                ),
-              ),
-            ),
-            title: const Text(
-              "Back",
-              style: TextStyle(
-                fontSize: 18,
-                color: kPrimaryColor,
-              ),
-            ),
+          AuthHeaderTileWidget(
+            onTap: () {
+              Navigator.of(context).pop();
+            },
           ),
           const Expanded(
             flex: 1,
@@ -68,7 +47,7 @@ class SignInScreen extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      kHeight30,
+                      kHeight50,
                       AuthTextFieldWidget(
                         validator: (value) {
                           if (value == null || value.isEmpty) {
@@ -105,7 +84,7 @@ class SignInScreen extends StatelessWidget {
                           ),
                         ),
                       ),
-                      kHeight50,
+                      kHeight40,
                       SizedBox(
                         width: double.maxFinite,
                         height: 50,
@@ -119,6 +98,36 @@ class SignInScreen extends StatelessWidget {
                             ),
                           ),
                         ),
+                      ),
+                      kHeight40,
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          const Text(
+                            "Don't have any Account?",
+                            style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.w500,
+                              color: kSutitleColor,
+                            ),
+                          ),
+                          InkWell(
+                            onTap: () {
+                              Get.off(
+                                () => const SignUpScreen(),
+                                transition: Transition.fadeIn,
+                              );
+                            },
+                            child: const Text(
+                              " Sign Up",
+                              style: TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.w600,
+                                color: kSecondaryColor,
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
