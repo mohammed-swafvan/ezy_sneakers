@@ -1,7 +1,6 @@
 import 'package:ezy_sneakers/core/colors.dart';
 import 'package:ezy_sneakers/core/constants.dart';
 import 'package:ezy_sneakers/presentations/home/home_screen.dart';
-import 'package:ezy_sneakers/presentations/home/widgets/home_app_bar.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavScreen extends StatefulWidget {
@@ -17,7 +16,7 @@ class _BottomNavState extends State<BottomNavScreen> {
     const HomeScreen(),
     HomeScreen(),
     HomeScreen(),
-    HomeAppBar(),
+    HomeScreen(),
   ];
   @override
   Widget build(BuildContext context) {

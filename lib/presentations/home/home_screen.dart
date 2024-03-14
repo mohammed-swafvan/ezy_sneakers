@@ -1,5 +1,7 @@
 import 'package:ezy_sneakers/core/colors.dart';
 import 'package:ezy_sneakers/presentations/home/widgets/home_app_bar.dart';
+import 'package:ezy_sneakers/presentations/home/widgets/home_banner_widget.dart';
+import 'package:ezy_sneakers/presentations/home/widgets/home_search_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -22,7 +24,18 @@ class HomeScreen extends StatelessWidget {
           onCartButton: () {},
         ),
       ),
-      body: Container(),
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            // -- Search Container Section
+            HomeSearchWidget(onTap: () {}),
+
+            // -- Sliding Banner Section
+            const HomeBannersWidget(),
+          ],
+        ),
+      ),
     );
   }
 }

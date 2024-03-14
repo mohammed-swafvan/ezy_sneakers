@@ -1,3 +1,4 @@
+import 'package:ezy_sneakers/core/image_string.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -10,9 +11,10 @@ const SizedBox kHeight25 = SizedBox(height: 25);
 const SizedBox kHeight30 = SizedBox(height: 30);
 const SizedBox kHeight40 = SizedBox(height: 40);
 const SizedBox kHeight50 = SizedBox(height: 50);
+const SizedBox kWidth10 = SizedBox(width: 10);
 
 // -- Border Radius
-final BorderRadius kBorderRadius10 = BorderRadius.circular(12);
+final BorderRadius kBorderRadius10 = BorderRadius.circular(10);
 final BorderRadius kBorderRadius12 = BorderRadius.circular(12);
 const BorderRadius kBorderRadiusVert40 = BorderRadius.vertical(top: Radius.circular(40));
 
@@ -44,4 +46,13 @@ final List<Map<String, dynamic>> kBottomNavItems = [
     "outlined_icon": Iconsax.profile_circle,
     "text": "Profile",
   },
+];
+// -- Banners Image List
+// -- Constant Lists
+final List<String> kBanners = [
+  ImageStrings.banner_1,
+  ImageStrings.banner_2,
+  ImageStrings.banner_3,
+  ImageStrings.banner_4,
+  ImageStrings.banner_5,
 ];
