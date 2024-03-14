@@ -1,6 +1,6 @@
-# ezy_sneakers
+# Ezy Sneaker
 
-A new Flutter project.
+Ezy Sneakers cutting-edge e-commerce application designed to provide users with a seamless and enjoyable shopping experience for sneakers. Built using Flutter Frame work for the frontend and Node.js for the backend, Ezy Sneakers allowing users to explore, purchase, and stay up-to-date with the latest trends in footwear. With a user friendly-interface, smooth navigation, and secure payment option, Ezy Sneakers is the go-to destination for sneakers enthusiasts to find their perfect pair.
 
 ## Getting Started
 
