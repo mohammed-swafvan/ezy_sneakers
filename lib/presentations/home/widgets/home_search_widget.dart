@@ -9,18 +9,18 @@ class HomeSearchWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: onTap,
-      child: Container(
-        margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 11),
-        decoration: BoxDecoration(
-          color: Colors.transparent,
-          borderRadius: kBorderRadius12,
-          border: Border.all(
-            color: kSubtitleColor,
-          ),
+    return Container(
+      margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 11),
+      decoration: BoxDecoration(
+        color: Colors.transparent,
+        borderRadius: kBorderRadius12,
+        border: Border.all(
+          color: kSubtitleColor,
         ),
+      ),
+      child: InkWell(
+        onTap: onTap,
         child: const Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [

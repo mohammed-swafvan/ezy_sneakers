@@ -3,6 +3,7 @@ import 'package:ezy_sneakers/presentations/home/widgets/home_app_bar.dart';
 import 'package:ezy_sneakers/presentations/home/widgets/home_banner_widget.dart';
 import 'package:ezy_sneakers/presentations/home/widgets/home_deal_of_the_day_widget.dart';
 import 'package:ezy_sneakers/presentations/home/widgets/home_hot_selling_widget.dart';
+import 'package:ezy_sneakers/presentations/home/widgets/home_recommended_for_you_widget.dart';
 import 'package:ezy_sneakers/presentations/home/widgets/home_search_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -43,6 +44,7 @@ class HomeScreen extends StatelessWidget {
             const HomeHotSellingWidget(),
 
             // -- Recommended For You Section
+            const RecommendedForYouWidget(),
           ],
         ),
       ),

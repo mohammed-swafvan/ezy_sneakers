@@ -72,7 +72,7 @@ class ProductCardWidget extends StatelessWidget {
           const Text(
             "Nike sketch running shoes for men",
             style: TextStyle(
-              fontSize: 14,
+              fontSize: 15,
             ),
             overflow: TextOverflow.ellipsis,
             maxLines: 2,
@@ -85,7 +85,7 @@ class ProductCardWidget extends StatelessWidget {
               Text(
                 "\$75",
                 style: TextStyle(
-                  fontSize: 16,
+                  fontSize: 17,
                   fontWeight: FontWeight.bold,
                   overflow: TextOverflow.ellipsis,
                 ),
@@ -95,7 +95,7 @@ class ProductCardWidget extends StatelessWidget {
               Text(
                 "\$90",
                 style: TextStyle(
-                  fontSize: 10,
+                  fontSize: 11,
                   color: kLightGrey,
                   overflow: TextOverflow.ellipsis,
                   decoration: TextDecoration.lineThrough,
@@ -106,7 +106,7 @@ class ProductCardWidget extends StatelessWidget {
               Text(
                 "20% OFF",
                 style: TextStyle(
-                  fontSize: 10,
+                  fontSize: 11,
                   color: kTopSellerBannerColor,
                   overflow: TextOverflow.ellipsis,
                 ),
@@ -127,7 +127,7 @@ class ProductCardWidget extends StatelessWidget {
                 ),
                 child: const Icon(
                   Iconsax.star1,
-                  size: 16,
+                  size: 17,
                   color: kPrimaryColor,
                 ),
               ),
@@ -135,7 +135,7 @@ class ProductCardWidget extends StatelessWidget {
               const Text(
                 "4",
                 style: TextStyle(
-                  fontSize: 14,
+                  fontSize: 15,
                   overflow: TextOverflow.ellipsis,
                 ),
               ),
@@ -143,7 +143,7 @@ class ProductCardWidget extends StatelessWidget {
               const Text(
                 "(322)",
                 style: TextStyle(
-                  fontSize: 14,
+                  fontSize: 15,
                   color: kSubtitleColor,
                   overflow: TextOverflow.ellipsis,
                 ),

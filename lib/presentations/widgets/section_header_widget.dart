@@ -20,11 +20,11 @@ class SectionHeaderWidget extends StatelessWidget {
         Text(
           sectionTitle,
           style: const TextStyle(
-            fontSize: 16,
+            fontSize: 18,
             fontWeight: FontWeight.bold,
           ),
         ),
-    
+
         // -- Section Headed Triling
         InkWell(
           onTap: onViewAllTap,
