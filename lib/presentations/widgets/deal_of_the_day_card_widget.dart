@@ -38,9 +38,9 @@ class DealOfTheDayCardWidget extends StatelessWidget {
               color: kAlertColor,
               borderRadius: kBorderRadius04,
             ),
-            child: Text(
+            child: const Text(
               "40-60% OFF",
-              style: const TextStyle(
+              style: TextStyle(
                 color: kPrimaryColor,
                 fontSize: 13,
                 fontWeight: FontWeight.w500,

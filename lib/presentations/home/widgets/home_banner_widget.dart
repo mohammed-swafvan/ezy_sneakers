@@ -2,7 +2,6 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:ezy_sneakers/core/colors.dart';
 import 'package:ezy_sneakers/core/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class HomeBannersWidget extends StatefulWidget {
   const HomeBannersWidget({super.key});
@@ -71,7 +70,6 @@ class _HomeBannersWidgetState extends State<HomeBannersWidget> {
         child: Image.asset(
           image,
           fit: BoxFit.cover,
-          
         ),
       ),
     );

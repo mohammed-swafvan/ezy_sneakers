@@ -4,8 +4,8 @@ import 'package:ezy_sneakers/presentations/widgets/deal_of_the_day_card_widget.d
 import 'package:ezy_sneakers/presentations/widgets/section_header_widget.dart';
 import 'package:flutter/material.dart';
 
-class DealOfTheDayWidget extends StatelessWidget {
-  const DealOfTheDayWidget({super.key});
+class HomeDealOfTheDayWidget extends StatelessWidget {
+  const HomeDealOfTheDayWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

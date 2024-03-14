@@ -5,12 +5,12 @@ class RoundedImageWidget extends StatelessWidget {
     super.key,
     required this.image,
     required this.imageWidth,
-    required this.imageHeight,
+    this.imageHeight,
     required this.radius,
   });
   final String image;
   final double imageWidth;
-  final double imageHeight;
+  final double? imageHeight;
   final double radius;
 
   @override

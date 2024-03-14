@@ -14,9 +14,9 @@ class _BottomNavState extends State<BottomNavScreen> {
   int currentIndex = 0;
   List<Widget> screens = [
     const HomeScreen(),
-    HomeScreen(),
-    HomeScreen(),
-    HomeScreen(),
+    const HomeScreen(),
+    const HomeScreen(),
+    const HomeScreen(),
   ];
   @override
   Widget build(BuildContext context) {

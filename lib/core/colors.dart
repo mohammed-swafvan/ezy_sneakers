@@ -12,5 +12,5 @@ const Color kTextButtonColor = Color.fromARGB(255, 28, 75, 206);
 const Color kLightGrey = Color.fromARGB(255, 188, 188, 188);
 const Color kTopSellerBannerColor = Color.fromARGB(255, 255, 98, 0);
 const Color kTrendingBannerColor = Colors.green;
-const Color kStarIconColor = Colors.orange;
+const Color kRatingColor = Colors.orange;
 const Color kAlertColor = Colors.red;
