@@ -14,6 +14,7 @@ const SizedBox kHeight50 = SizedBox(height: 50);
 const SizedBox kWidth10 = SizedBox(width: 10);
 
 // -- Border Radius
+final BorderRadius kBorderRadius04 = BorderRadius.circular(4);
 final BorderRadius kBorderRadius10 = BorderRadius.circular(10);
 final BorderRadius kBorderRadius12 = BorderRadius.circular(12);
 const BorderRadius kBorderRadiusVert40 = BorderRadius.vertical(top: Radius.circular(40));
@@ -22,6 +23,7 @@ const BorderRadius kBorderRadiusVert40 = BorderRadius.vertical(top: Radius.circu
 const EdgeInsets kEdgeInsetsHoriz16 = EdgeInsets.symmetric(horizontal: 16);
 const EdgeInsets kEdgeInsetsHoriz40 = EdgeInsets.symmetric(horizontal: 40);
 const EdgeInsets kEdgeInsetsVert10 = EdgeInsets.symmetric(vertical: 10);
+const EdgeInsets kEdgeInsetsVert12 = EdgeInsets.symmetric(vertical: 12);
 const EdgeInsets kEdgeInsetsVert24 = EdgeInsets.symmetric(vertical: 24);
 
 // -- Bottom Navigatio Bar Icons and Text

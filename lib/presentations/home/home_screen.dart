@@ -1,6 +1,7 @@
 import 'package:ezy_sneakers/core/colors.dart';
 import 'package:ezy_sneakers/presentations/home/widgets/home_app_bar.dart';
 import 'package:ezy_sneakers/presentations/home/widgets/home_banner_widget.dart';
+import 'package:ezy_sneakers/presentations/home/widgets/home_deal_of_the_day_widget.dart';
 import 'package:ezy_sneakers/presentations/home/widgets/home_search_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -33,6 +34,9 @@ class HomeScreen extends StatelessWidget {
 
             // -- Sliding Banner Section
             const HomeBannersWidget(),
+
+            // -- Deal Of The Day Section
+            const DealOfTheDayWidget(),
           ],
         ),
       ),
