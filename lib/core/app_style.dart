@@ -20,8 +20,18 @@ class AppStyle {
   );
 
   static ThemeData appTheme = ThemeData(
-    appBarTheme: const AppBarTheme(backgroundColor: kPrimaryColor, elevation: 4),
     brightness: Brightness.light,
+    appBarTheme: AppBarTheme(
+      backgroundColor: kPrimaryColor,
+      elevation: 6,
+      shadowColor: kLightGrey.withOpacity(0.3),
+      centerTitle: false,
+    ),
+    textTheme: const TextTheme(
+      headlineSmall: TextStyle(color: Colors.black, fontWeight: FontWeight.w400),
+      bodyLarge: TextStyle(color: Colors.black),
+      bodyMedium: TextStyle(color: Colors.black),
+    ),
     shadowColor: kLightGrey,
     textButtonTheme: TextButtonThemeData(
       style: ButtonStyle(
@@ -51,6 +61,6 @@ class AppStyle {
     colorScheme: ColorScheme.fromSeed(seedColor: kSecondaryColor),
     primarySwatch: materialConvervtedColor,
     scaffoldBackgroundColor: kScaffoldBgColor,
-    useMaterial3: true,
+    useMaterial3: false,
   );
 }

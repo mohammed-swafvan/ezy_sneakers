@@ -1,6 +1,8 @@
 import 'package:ezy_sneakers/core/colors.dart';
 import 'package:ezy_sneakers/core/constants.dart';
+import 'package:ezy_sneakers/presentations/bottom_nav/bottom_nav_screen.dart';
 import 'package:ezy_sneakers/presentations/sign_up/sign_up_screen.dart';
+import 'package:ezy_sneakers/presentations/welcome/welcome_screen.dart';
 import 'package:ezy_sneakers/presentations/widgets/auth_header_tile_widget.dart';
 import 'package:ezy_sneakers/presentations/widgets/auth_text_field_widget.dart';
 import 'package:ezy_sneakers/presentations/widgets/custom_scaffold.dart';
@@ -18,7 +20,10 @@ class SignInScreen extends StatelessWidget {
         children: [
           AuthHeaderTileWidget(
             onTap: () {
-              Navigator.of(context).pop();
+              Get.off(
+                () => const WelcomScreen(),
+                transition: Transition.fadeIn,
+              );
             },
           ),
           const Expanded(
@@ -89,7 +94,12 @@ class SignInScreen extends StatelessWidget {
                         width: double.maxFinite,
                         height: 50,
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Get.off(
+                              () => const BottomNavScreen(),
+                              transition: Transition.fadeIn,
+                            );
+                          },
                           child: const Text(
                             "Sign in",
                             style: TextStyle(
@@ -108,7 +118,7 @@ class SignInScreen extends StatelessWidget {
                             style: TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.w500,
-                              color: kSutitleColor,
+                              color: kSubtitleColor,
                             ),
                           ),
                           InkWell(

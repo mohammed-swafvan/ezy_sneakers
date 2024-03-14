@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 
 // Sized Box
 const SizedBox kHeight05 = SizedBox(height: 05);
@@ -20,3 +21,27 @@ const EdgeInsets kEdgeInsetsHoriz16 = EdgeInsets.symmetric(horizontal: 16);
 const EdgeInsets kEdgeInsetsHoriz40 = EdgeInsets.symmetric(horizontal: 40);
 const EdgeInsets kEdgeInsetsVert10 = EdgeInsets.symmetric(vertical: 10);
 const EdgeInsets kEdgeInsetsVert24 = EdgeInsets.symmetric(vertical: 24);
+
+// -- Bottom Navigatio Bar Icons and Text
+final List<Map<String, dynamic>> kBottomNavItems = [
+  {
+    "icon": Iconsax.home_15,
+    "outlined_icon": Iconsax.home4,
+    "text": "Home",
+  },
+  {
+    "icon": Iconsax.category5,
+    "outlined_icon": Iconsax.category,
+    "text": "Categories",
+  },
+  {
+    "icon": Iconsax.clock5,
+    "outlined_icon": Iconsax.clock,
+    "text": "Orders",
+  },
+  {
+    "icon": Iconsax.profile_circle5,
+    "outlined_icon": Iconsax.profile_circle,
+    "text": "Profile",
+  },
+];

@@ -21,7 +21,7 @@ class WelcomeButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Get.to(
+        Get.off(
           () => navigateTo,
           transition: Transition.fadeIn,
         );
