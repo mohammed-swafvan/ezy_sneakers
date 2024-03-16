@@ -1,3 +1,4 @@
+import 'package:ezy_sneakers/core/colors.dart';
 import 'package:ezy_sneakers/core/image_string.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
@@ -27,6 +28,23 @@ const EdgeInsets kEdgeInsetsHoriz40 = EdgeInsets.symmetric(horizontal: 40);
 const EdgeInsets kEdgeInsetsVert10 = EdgeInsets.symmetric(vertical: 10);
 const EdgeInsets kEdgeInsetsVert12 = EdgeInsets.symmetric(vertical: 12);
 const EdgeInsets kEdgeInsetsVert24 = EdgeInsets.symmetric(vertical: 24);
+
+// -- Box Shadow
+final List<BoxShadow> kCardShadow = [
+  BoxShadow(
+    color: kLightGrey.withOpacity(0.3),
+    blurRadius: 7.0,
+    offset: const Offset(0, 6),
+  ),
+  const BoxShadow(
+    color: kCardColor,
+    offset: Offset(-6, 0),
+  ),
+  const BoxShadow(
+    color: kCardColor,
+    offset: Offset(6, 0),
+  ),
+];
 
 // -- Bottom Navigatio Bar Icons and Text
 final List<Map<String, dynamic>> kBottomNavItems = [

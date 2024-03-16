@@ -5,7 +5,9 @@ import 'package:ezy_sneakers/presentations/home/widgets/home_deal_of_the_day_wid
 import 'package:ezy_sneakers/presentations/home/widgets/home_hot_selling_widget.dart';
 import 'package:ezy_sneakers/presentations/home/widgets/home_recommended_for_you_widget.dart';
 import 'package:ezy_sneakers/presentations/home/widgets/home_search_widget.dart';
+import 'package:ezy_sneakers/presentations/search/search_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -32,7 +34,14 @@ class HomeScreen extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             // -- Search Container Section
-            HomeSearchWidget(onTap: () {}),
+            HomeSearchWidget(
+              onTap: () {
+                Get.to(
+                  () => const SearchScreen(),
+                  transition: Transition.fadeIn,
+                );
+              },
+            ),
 
             // -- Sliding Banner Section
             const HomeBannersWidget(),
