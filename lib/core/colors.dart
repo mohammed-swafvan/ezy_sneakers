@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 const Color kPrimaryColor = Colors.white;
-const Color kScaffoldBgColor = Colors.white;
+const Color kScaffoldBgColor = Color.fromARGB(255, 248, 245, 245);
 const Color kCardColor = Colors.white;
 const Color kSecondaryColor = Color.fromARGB(255, 28, 75, 206);
 const Color kHomeScaffoldBgColor = Color.fromARGB(255, 244, 244, 244);

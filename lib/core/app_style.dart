@@ -35,10 +35,10 @@ class AppStyle {
     shadowColor: kLightGrey,
     textButtonTheme: TextButtonThemeData(
       style: ButtonStyle(
-        foregroundColor: MaterialStateProperty.all<Color>(kPrimaryColor),
-        backgroundColor: MaterialStateProperty.all<Color>(kSecondaryColor),
-        elevation: MaterialStateProperty.all<double>(4.0),
-        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+        foregroundColor: WidgetStateProperty.all<Color>(kPrimaryColor),
+        backgroundColor: WidgetStateProperty.all<Color>(kSecondaryColor),
+        elevation: WidgetStateProperty.all<double>(4.0),
+        shape: WidgetStateProperty.all<RoundedRectangleBorder>(
           RoundedRectangleBorder(
             borderRadius: kBorderRadius12,
           ),
@@ -47,11 +47,11 @@ class AppStyle {
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ButtonStyle(
-        padding: MaterialStateProperty.all<EdgeInsets>(kEdgeInsetsVert10),
-        foregroundColor: MaterialStateProperty.all<Color>(kPrimaryColor),
-        backgroundColor: MaterialStateProperty.all<Color>(kSecondaryColor),
-        elevation: MaterialStateProperty.all<double>(4.0),
-        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+        padding: WidgetStateProperty.all<EdgeInsets>(kEdgeInsetsVert10),
+        foregroundColor: WidgetStateProperty.all<Color>(kPrimaryColor),
+        backgroundColor: WidgetStateProperty.all<Color>(kSecondaryColor),
+        elevation: WidgetStateProperty.all<double>(4.0),
+        shape: WidgetStateProperty.all<RoundedRectangleBorder>(
           RoundedRectangleBorder(
             borderRadius: kBorderRadius10,
           ),

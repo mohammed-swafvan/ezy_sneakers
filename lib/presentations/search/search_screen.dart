@@ -1,6 +1,8 @@
 import 'package:ezy_sneakers/core/constants.dart';
 import 'package:ezy_sneakers/presentations/search/widgets/search_appbar_widget.dart';
+import 'package:ezy_sneakers/presentations/search_product/search_product_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class SearchScreen extends StatelessWidget {
   const SearchScreen({super.key});
@@ -35,7 +37,12 @@ class SearchScreen extends StatelessWidget {
               (e) {
                 return ListTile(
                   contentPadding: EdgeInsets.zero,
-                  onTap: () {},
+                  onTap: () {
+                    Get.to(
+                      () => const SearchProductsScreen(category: "Top Seller"),
+                      transition: Transition.fadeIn,
+                    );
+                  },
                   title: Text(e),
                 );
               },
